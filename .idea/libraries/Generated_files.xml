@@ -1,0 +1,41 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/dist/app.js" />
+        <item url="file://$PROJECT_DIR$/dist/dao/dao.js" />
+        <item url="file://$PROJECT_DIR$/dist/routes/address.js" />
+        <item url="file://$PROJECT_DIR$/dist/routes/api.js" />
+        <item url="file://$PROJECT_DIR$/dist/routes/auth.js" />
+        <item url="file://$PROJECT_DIR$/dist/routes/cart.js" />
+        <item url="file://$PROJECT_DIR$/dist/routes/feedback.js" />
+        <item url="file://$PROJECT_DIR$/dist/routes/goods.js" />
+        <item url="file://$PROJECT_DIR$/dist/routes/notify.js" />
+        <item url="file://$PROJECT_DIR$/dist/routes/order.js" />
+        <item url="file://$PROJECT_DIR$/dist/routes/pay.js" />
+        <item url="file://$PROJECT_DIR$/dist/routes/region.js" />
+        <item url="file://$PROJECT_DIR$/dist/test/test.js" />
+        <item url="file://$PROJECT_DIR$/dist/util/util.js" />
+        <item url="file://$PROJECT_DIR$/dist/util/wxUtil.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/dist/app.js" />
+      <root url="file://$PROJECT_DIR$/dist/dao/dao.js" />
+      <root url="file://$PROJECT_DIR$/dist/routes/address.js" />
+      <root url="file://$PROJECT_DIR$/dist/routes/api.js" />
+      <root url="file://$PROJECT_DIR$/dist/routes/auth.js" />
+      <root url="file://$PROJECT_DIR$/dist/routes/cart.js" />
+      <root url="file://$PROJECT_DIR$/dist/routes/feedback.js" />
+      <root url="file://$PROJECT_DIR$/dist/routes/goods.js" />
+      <root url="file://$PROJECT_DIR$/dist/routes/notify.js" />
+      <root url="file://$PROJECT_DIR$/dist/routes/order.js" />
+      <root url="file://$PROJECT_DIR$/dist/routes/pay.js" />
+      <root url="file://$PROJECT_DIR$/dist/routes/region.js" />
+      <root url="file://$PROJECT_DIR$/dist/test/test.js" />
+      <root url="file://$PROJECT_DIR$/dist/util/util.js" />
+      <root url="file://$PROJECT_DIR$/dist/util/wxUtil.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
