@@ -8,6 +8,9 @@ router.use(util.loginChecker)
 
 router.get('/detail', (req, res, next) => {
     let addressId = req.query.id
+    if (addressId <= 0) {
+        return res.json(util.getFailureData('地址ID不对'))
+    }
     let wxInfo = req.session.wxInfo
     let userId = wxInfo.userId
     new Promise((resolve, reject) => {
