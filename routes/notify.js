@@ -78,8 +78,8 @@ function saveNotifyLog (xml) {
             //     .reduce((prev, next, index) => `${prev}${index === 0 ? '' : ','}${xml[next]}`, '')
             // let couponFeeTotal = Object.keys(xml).filter(key => key.startsWith('coupon_fee_'))
             //     .reduce((prev, next) => prev + xml[next], 0)
-            let insertSql = 'insert into t_mall_pay_notify (id, app_id, '
-            let updateSql = 'update t_mall_pay_notify set app_id = ?, '
+            let insertSql = 'insert into t_mall_pay_notify (id, app_id '
+            let updateSql = 'update t_mall_pay_notify set app_id = ? '
             let couponTypes = ''
             let couponIds = ''
             let couponFeeTotal = 0
