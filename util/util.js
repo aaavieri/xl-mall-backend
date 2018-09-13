@@ -121,7 +121,7 @@ exports.getErr = function (msg, status) {
 
 exports.generateSn = function (prefix) {
     const date = new Date();
-    return prefix + date.getFullYear() + _.padStart(date.getMonth(), 2, '0') + _.padStart(date.getDay(), 2, '0') + _.padStart(date.getHours(), 2, '0') + _.padStart(date.getMinutes(), 2, '0') + _.padStart(date.getSeconds(), 2, '0') + _.random(1000, 9999);
+    return prefix + date.getFullYear() + _.padStart(date.getMonth() + 1, 2, '0') + _.padStart(date.getDate(), 2, '0') + _.padStart(date.getHours(), 2, '0') + _.padStart(date.getMinutes(), 2, '0') + _.padStart(date.getSeconds(), 2, '0') + _.random(1000, 9999);
 }
 
 exports.getOrderStatusText = function (status) {
