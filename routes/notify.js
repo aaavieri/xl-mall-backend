@@ -96,11 +96,11 @@ function saveNotifyLog (xml) {
                     updateSql = `${updateSql}, ${key} = ?`
                     saveData.push(xml[key])
                 }
-                saveData.push(...[couponTypes, couponIds, couponFeeTotal])
             })
+            saveData.push(...[couponTypes, couponIds, couponFeeTotal])
             insertSql = `${insertSql}, coupon_types, coupon_ids, coupon_fee_total) values (null, ${new Array(saveData.length).fill('?').join(',')})`
             updateSql = `${updateSql}, coupon_types = ?, coupon_ids = ?, coupon_fee_total = ?, update_user = 'alipay', update_time = CURRENT_TIMESTAMP,
-                row_version = row_version where id = ?`
+                row_version = row_version + 1 where id = ?`
             // let saveData = [xml.appid, xml.mch_id, xml.device_info, xml.nonce_str, xml.sign, xml.sign_type, xml.result_code, xml.err_code,
             //     xml.err_code_des, xml.openid, xml.is_subscribe, xml.trade_type, xml.bank_type, xml.total_fee, xml.settlement_total_fee,
             //     xml.fee_type, xml.cash_fee, xml.cash_fee_type, xml.coupon_fee, xml.coupon_count, couponTypes, couponIds,
