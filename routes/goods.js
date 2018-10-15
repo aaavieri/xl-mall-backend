@@ -116,7 +116,7 @@ router.get('/list', (req, res, next) => {
 
 router.get('/detail', (req, res, next) => {
     var goodsId = req.query.id
-    dao.executeList({id: goodsId}, new dao.selectOne('select id, name, price, introduction, out_flag, cover_pic_id from t_mall_goods ' +
+    dao.executeList({id: goodsId}, new dao.selectOne('select id, name, price, introduction, out_flag, attributes, faqs, cover_pic_id from t_mall_goods ' +
         'where id = ? and del_flag = false', [goodsId], (error, results, fields, others) => {
         if (error) {
             return next(error)
