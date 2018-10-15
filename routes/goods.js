@@ -83,7 +83,7 @@ router.post('/justBuy', (req, res, next) => {
 router.get('/list', (req, res, next) => {
     dao.execute(new dao.selectList('select g.id, g.name, g.type_id, d.name as type_name, p.url as url, p.local_flag as local_flag ' +
         'from t_mall_goods g left join t_dictionary d ' +
-        'on (g.type_id = d.value and d.table_name = \'t_goods\' and d.column_name =  \'type_id\' and d.del_flag = false)' +
+        'on (g.type_id = d.value and d.table_name = \'t_mall_goods\' and d.column_name =  \'type_id\' and d.del_flag = false)' +
         ' left join t_mall_picture p on (g.cover_pic_id = p.id and p.del_flag = false)' +
         ' where g.del_flag = false', [], function (error, results, fields) {
         if (error) {
